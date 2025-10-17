@@ -1,5 +1,27 @@
 # educify-backend
 
+## Project Setup
+- Initialize project
+
+```
+git clone https://github.com/ameh0429/educify-backend.git
+cd educify-backend
+npm init -y
+```
+
+- Install dependencies
+
+```
+npm install express cors dotenv express-validator
+npm install --save-dev nodemon
+```
+
+- Update `package.json` to use ESM
+
+```
+"type": "module"
+```
+
 ## API Endpoints Summary
 - `GET /api/tutors` - Get all tutors with filters
 
@@ -395,5 +417,14 @@ Expected response:
     },
     "message": "Payment processed successfully"
 }
+```
+## Running the Application
+
+```
+// Development mode
+npm run dev
+
+// Production mode
+npm start
 ```
 
